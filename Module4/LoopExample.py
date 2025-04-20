@@ -1,8 +1,18 @@
-total = 0
-current_amount = 1
 
-while current_amount != 0:
-    current_amount = int(input('Enter amount of Meal(enter 0 to end): '))
-    total+=current_amount
+playlist = ["Clean Girl Makeup", "Soft Glam", "Smokey Eye", "No Makeup Makeup"]
 
-print('Total:', total)
+index = 0
+
+keep_watching = True
+
+while keep_watching and index < len(playlist):
+
+    print(f"Makeup Trend: {playlist[index]}")
+
+    index += 1
+
+    user_input = input("Add another makeup trend to the playlist: ")
+    playlist.append(user_input)
+
+    print("len(playlist): ", len(playlist))
+    print("index: ", index)
