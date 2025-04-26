@@ -1,4 +1,4 @@
-from Module4.ItemToPurchase import ItemToPurchase
+from Module4.ItemToPurchaseOld import ItemToPurchaseOld
 
 
 if __name__ == '__main__':
@@ -13,7 +13,7 @@ if __name__ == '__main__':
         current_price = float(input("Enter the item price: "))
         current_quantity = int(input("Enter the item quantity: "))
 
-        items.append(ItemToPurchase(current_name, current_price, current_quantity))
+        items.append(ItemToPurchaseOld(current_name, current_price, current_quantity))
         print()
 
     # Loop thorugh items and print out the cost of each itme and then the total

@@ -1,4 +1,4 @@
-class ItemToPurchase:
+class ItemToPurchaseOld:
 
     # Constructor/Initializer method
     def __init__(self):
