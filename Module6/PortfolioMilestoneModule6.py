@@ -41,6 +41,8 @@ def print_menu(cart:ShoppingCart):
             # Find current values for item so that only the quantity gets updated.
             current_item = cart.find_item(current_name)
             cart.modify_item(ItemToPurchase(current_name, current_item.item_price, current_quantity, current_item.item_description))
+        elif selection == "q":
+            print("Quitting shopping cart")
         else:
             print("Invalid selection, please try again.")
 
