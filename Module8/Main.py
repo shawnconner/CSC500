@@ -26,9 +26,9 @@ def print_menu(cart:ShoppingCart):
         elif selection == "a":
             print("ADD ITEM TO CART")
             current_name = input("Enter the item name: ")
+            current_description = input("Enter the item description: ")
             current_price = float(input("Enter the item price: "))
             current_quantity = int(input("Enter the item quantity: "))
-            current_description = input("Enter the item description: ")
             cart.add_item(ItemToPurchase(current_name, current_price, current_quantity, current_description))
         elif selection == "r":
             print("REMOVE ITEM FROM CART")
@@ -47,6 +47,8 @@ def print_menu(cart:ShoppingCart):
             print("Invalid selection, please try again.")
 
 if __name__ == '__main__':
-    cart = ShoppingCart("Shawn Conner", "April 26, 2025")
+    customer_name = input("Enter customer's name:")
+    date = input("Enter today's date:")
+    cart = ShoppingCart(customer_name, date)
     print_menu(cart)
 
