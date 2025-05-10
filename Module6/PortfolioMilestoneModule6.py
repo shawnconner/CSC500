@@ -12,9 +12,9 @@ def display_menu():
 
 def print_menu(cart:ShoppingCart):
     selection = "a"
-    display_menu()
 
     while selection != "q":
+        display_menu()
         selection = input("Choose an option: ")
 
         if selection == "o":
